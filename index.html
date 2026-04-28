@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaDesk 登录</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">TEAM ACCESS PORTAL</p>
+        <h1>欢迎进入 NovaDesk 工作台</h1>
+        <p class="hero-copy">
+          一个简洁的登录演示画面，适合拿来展示基础账户登录、品牌视觉和表单交互。
+        </p>
+
+        <div class="hero-card">
+          <div class="metric">
+            <span class="metric-label">今日在线</span>
+            <strong>12,480</strong>
+          </div>
+          <div class="metric">
+            <span class="metric-label">安全评分</span>
+            <strong>99.98%</strong>
+          </div>
+          <div class="metric">
+            <span class="metric-label">平均响应</span>
+            <strong>84ms</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="brand-row">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div>
+            <p class="brand-name">NovaDesk</p>
+            <p class="brand-subtitle">Secure Sign In</p>
+          </div>
+        </div>
+
+        <form class="login-form" id="loginForm">
+          <div class="title-row">
+            <div>
+              <h2>用户登录</h2>
+              <p>请输入账号信息以继续访问系统。</p>
+            </div>
+            <span class="status-pill">演示版</span>
+          </div>
+
+          <label class="field">
+            <span>邮箱或账号</span>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="name@company.com"
+              autocomplete="username"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span>密码</span>
+            <div class="password-wrap">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="请输入密码"
+                autocomplete="current-password"
+                required
+              />
+              <button type="button" class="ghost-button" id="togglePassword">
+                显示
+              </button>
+            </div>
+          </label>
+
+          <div class="helper-row">
+            <label class="checkbox">
+              <input type="checkbox" name="remember" />
+              <span>记住我</span>
+            </label>
+            <a href="#" class="text-link">忘记密码？</a>
+          </div>
+
+          <button type="submit" class="primary-button">登录</button>
+
+          <div class="divider">
+            <span>或使用以下方式</span>
+          </div>
+
+          <div class="social-grid">
+            <button type="button" class="secondary-button">Google</button>
+            <button type="button" class="secondary-button">GitHub</button>
+          </div>
+
+          <p class="signup-note">
+            还没有账号？
+            <a href="#" class="text-link">立即创建</a>
+          </p>
+        </form>
+
+        <p class="feedback" id="feedback" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
